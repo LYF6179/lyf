@@ -1,10 +1,7 @@
 body {
-  width: 100%;
-  max-width: 500px;
   font-size:1.25em;
   color: red;
-  background-color: white;
-  margin: 15px;
+  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -14,5 +11,4 @@ body {
 img {
   width: 100%;
   max-width: 500px;
-
 }
