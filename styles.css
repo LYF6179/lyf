@@ -1,6 +1,4 @@
 body {
-  font-size:1.25em;
-  color: red;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -10,5 +8,5 @@ body {
 
 img {
   width: 100%;
-  max-width: 500px;
+  max-width: 1000px;
 }
