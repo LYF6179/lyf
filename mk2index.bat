@@ -60,7 +60,7 @@ if !n! LSS 10 (
  )
 
 
-echo ^</div>^> >> index.html
+echo ^</div^> >> index.html
 
 echo ^<body^> >> index.html
 
@@ -113,7 +113,7 @@ if !n! LSS 10 (
  )
 
 
-echo ^</div>^> >> index.html
+echo ^</div^> >> index.html
 
 echo ^</body^> >> index.html
 echo ^</html^> >> index.html
