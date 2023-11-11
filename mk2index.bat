@@ -22,7 +22,8 @@ echo ^</head^> >> index.html
 
 echo ^<div class="nav"^> >> index.html
 
-set c=!cd:~36,3!
+set d=!cd:~36,3!
+SET /a c=100%d% %% 100
 set /a p=!c!-1
 set /a n=!c!+1
 
