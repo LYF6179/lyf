@@ -76,39 +76,40 @@ for /l %%a in (1,1,%cnt%) do (
 
 echo ^<div class="nav"^> >> index.html
 
-set c=!cd:~36,3!
+set d=!cd:~36,3!
+SET /a c=100%d% %% 100
 set /a p=!c!-1
 set /a n=!c!+1
 
 :: Add Prev Link
 if !p! LSS 2 (
-  echo ^<a href="/../"^>Prev^</a^>^&nbsp; >> index.html
+  echo ^<a href="../"^>Prev^</a^>^&nbsp; >> index.html
 ) else ( 
     if !p! LSS 10 (
-      echo ^<a href="/../00!p!"^>Prev^</a^>^&nbsp; >> index.html    
+      echo ^<a href="../00!p!"^>Prev^</a^>^&nbsp; >> index.html    
     ) else (
         if !p! LSS 100 (
-          echo ^<a href="/../0!p!"^>Prev^</a^>^&nbsp; >> index.html    
+          echo ^<a href="../0!p!"^>Prev^</a^>^&nbsp; >> index.html    
         ) else ( 
-            echo ^<a href="/../!p!"^>Prev^</a^>^&nbsp; >> index.html            )
+            echo ^<a href="../!p!"^>Prev^</a^>^&nbsp; >> index.html            )
           ) 
       )
   )
 
 :: Add Main Link
-echo ^<a href="/../"^>Main^</a^>^&nbsp; >> index.html    
+echo ^<a href="../"^>Main^</a^>^&nbsp; >> index.html    
 
 :: Add Next Link
 if !n! LSS 10 (
-  echo ^<a href="/../00!n!"^>Next^</a^>^&nbsp; >> index.html   
+  echo ^<a href="../00!n!"^>Next^</a^>^&nbsp; >> index.html   
 ) else (
     if !n! LSS 100 (
-      echo ^<a href="/../0!n!"^>Next^</a^>^&nbsp; >> index.html    
+      echo ^<a href="../0!n!"^>Next^</a^>^&nbsp; >> index.html    
     ) else (
         if !n! LSS 206 (
-          echo ^<a href="/../!n!"^>Next^</a^>^&nbsp; >> index.html    
+          echo ^<a href="../!n!"^>Next^</a^>^&nbsp; >> index.html    
         ) else (
-            echo ^<a href="/../"^>Next^</a^>^&nbsp; >> index.html    
+            echo ^<a href="../"^>Next^</a^>^&nbsp; >> index.html    
           )
       )
  )
