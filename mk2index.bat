@@ -28,33 +28,33 @@ set /a n=!c!+1
 
 :: Add Prev Link
 if !p! LSS 2 (
-  echo ^<a href="/LYF/"^>Prev^&nbsp;^</a^> >> index.html
+  echo ^<a href="../"^>Prev^</a^>^&nbsp; >> index.html
 ) else ( 
     if !p! LSS 10 (
-      echo ^<a href="/LYF/00!p!"^>Prev^</a^>^&nbsp; >> index.html    
+      echo ^<a href="../00!p!"^>Prev^</a^>^&nbsp; >> index.html    
     ) else (
         if !p! LSS 100 (
-          echo ^<a href="/LYF/0!p!"^>Prev^&nbsp;^</a^> >> index.html    
+          echo ^<a href="../0!p!"^>Prev^</a^>^&nbsp; >> index.html    
         ) else ( 
-            echo ^<a href="/LYF/!p!"^>Prev^&nbsp;^</a^> >> index.html            )
+            echo ^<a href="../!p!"^>Prev^</a^>^&nbsp; >> index.html            )
           ) 
       )
   )
 
 :: Add Main Link
-echo ^<a href="/LYF/"^>Main^&nbsp;^</a^> >> index.html    
+echo ^<a href="../"^>Main^</a^>^&nbsp; >> index.html    
 
 :: Add Next Link
 if !n! LSS 10 (
-  echo ^<a href="/LYF/00!n!"^>Next^&nbsp;^</a^> >> index.html   
+  echo ^<a href="../00!n!"^>Next^</a^>^&nbsp; >> index.html   
 ) else (
     if !n! LSS 100 (
-      echo ^<a href="/LYF/0!n!"^>Next^&nbsp;^</a^> >> index.html    
+      echo ^<a href="../0!n!"^>Next^</a^>^&nbsp; >> index.html    
     ) else (
         if !n! LSS 206 (
-          echo ^<a href="/LYF/!n!"^>Next^&nbsp;^</a^> >> index.html    
+          echo ^<a href="../!n!"^>Next^</a^>^&nbsp; >> index.html    
         ) else (
-            echo ^<a href="/LYF/"^>Next^&nbsp;^</a^> >> index.html    
+            echo ^<a href="../"^>Next^</a^>^&nbsp; >> index.html    
           )
       )
  )
@@ -81,33 +81,33 @@ set /a n=!c!+1
 
 :: Add Prev Link
 if !p! LSS 2 (
-  echo ^<a href="/LYF/"^>Prev^&nbsp;^</a^> >> index.html
+  echo ^<a href="/../"^>Prev^</a^>^&nbsp; >> index.html
 ) else ( 
     if !p! LSS 10 (
-      echo ^<a href="/LYF/00!p!"^>Prev^</a^>^&nbsp; >> index.html    
+      echo ^<a href="/../00!p!"^>Prev^</a^>^&nbsp; >> index.html    
     ) else (
         if !p! LSS 100 (
-          echo ^<a href="/LYF/0!p!"^>Prev^&nbsp;^</a^> >> index.html    
+          echo ^<a href="/../0!p!"^>Prev^</a^>^&nbsp; >> index.html    
         ) else ( 
-            echo ^<a href="/LYF/!p!"^>Prev^&nbsp;^</a^> >> index.html            )
+            echo ^<a href="/../!p!"^>Prev^</a^>^&nbsp; >> index.html            )
           ) 
       )
   )
 
 :: Add Main Link
-echo ^<a href="/LYF/"^>Main^&nbsp;^</a^> >> index.html    
+echo ^<a href="/../"^>Main^</a^>^&nbsp; >> index.html    
 
 :: Add Next Link
 if !n! LSS 10 (
-  echo ^<a href="/LYF/00!n!"^>Next^&nbsp;^</a^> >> index.html   
+  echo ^<a href="/../00!n!"^>Next^</a^>^&nbsp; >> index.html   
 ) else (
     if !n! LSS 100 (
-      echo ^<a href="/LYF/0!n!"^>Next^&nbsp;^</a^> >> index.html    
+      echo ^<a href="/../0!n!"^>Next^</a^>^&nbsp; >> index.html    
     ) else (
         if !n! LSS 206 (
-          echo ^<a href="/LYF/!n!"^>Next^&nbsp;^</a^> >> index.html    
+          echo ^<a href="/../!n!"^>Next^</a^>^&nbsp; >> index.html    
         ) else (
-            echo ^<a href="/LYF/"^>Next^&nbsp;^</a^> >> index.html    
+            echo ^<a href="/../"^>Next^</a^>^&nbsp; >> index.html    
           )
       )
  )
