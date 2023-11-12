@@ -23,7 +23,7 @@ echo ^</head^> >> index.html
 echo ^<div class="nav"^> >> index.html
 
 set d=!cd:~36,3!
-SET /a c=100%d% %% 100
+SET /a c=1000%d% %% 1000
 set /a p=!c!-1
 set /a n=!c!+1
 
