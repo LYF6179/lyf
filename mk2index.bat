@@ -52,7 +52,7 @@ if !n! LSS 10 (
     if !n! LSS 100 (
       echo ^<a href="../0!n!"^>Next^</a^>^&nbsp; >> index.html    
     ) else (
-        if !n! LSS 206 (
+        if !n! LSS 207 (
           echo ^<a href="../!n!"^>Next^</a^>^&nbsp; >> index.html    
         ) else (
             echo ^<a href="../"^>Next^</a^>^&nbsp; >> index.html    
@@ -77,7 +77,7 @@ for /l %%a in (1,1,%cnt%) do (
 echo ^<div class="nav"^> >> index.html
 
 set d=!cd:~36,3!
-SET /a c=100%d% %% 100
+SET /a c=1000%d% %% 1000
 set /a p=!c!-1
 set /a n=!c!+1
 
@@ -106,7 +106,7 @@ if !n! LSS 10 (
     if !n! LSS 100 (
       echo ^<a href="../0!n!"^>Next^</a^>^&nbsp; >> index.html    
     ) else (
-        if !n! LSS 206 (
+        if !n! LSS 207 (
           echo ^<a href="../!n!"^>Next^</a^>^&nbsp; >> index.html    
         ) else (
             echo ^<a href="../"^>Next^</a^>^&nbsp; >> index.html    
