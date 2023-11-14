@@ -74,6 +74,9 @@ for /l %%a in (1,1,%cnt%) do (
   )
 )
 
+echo ^</body^> >> index.html
+
+
 echo ^<div class="nav"^> >> index.html
 
 set d=!cd:~36,3!
@@ -117,5 +120,4 @@ if !n! LSS 10 (
 
 echo ^</div^> >> index.html
 
-echo ^</body^> >> index.html
 echo ^</html^> >> index.html
