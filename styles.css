@@ -1,13 +1,17 @@
 body {
-  max-width: 500px;
-  text-align: center;
   display: block;
+  max-width: 500px;
+  height: auto;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-
+div {
+  display: block;
+  height: auto;
+}
 
 img {
   width: 100%;
