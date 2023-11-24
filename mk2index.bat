@@ -28,7 +28,7 @@ set /a p=!c!-1
 set /a n=!c!+1
 
 :: Add Prev Link, insert proper # of 0s. Before 1, link to Main.
-if !p! LSS 2 (
+if !p! LSS 1 (
   echo ^<a href="../"^>Prev^</a^>^&nbsp; >> index.html
 ) else ( 
     if !p! LSS 10 (
